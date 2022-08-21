@@ -1,0 +1,156 @@
+@font-face {
+    font-family: merienda;
+    src: url(../font/Merienda-Regular.ttf);
+}
+body{
+    margin: 0;
+    font-family: merienda;
+}
+
+main{
+    max-width: 75%;
+    margin: 30px auto;
+    border: 30px solid transparent;
+    box-shadow: 0px 0px 20px rgb(221, 220, 220);
+    background-color: white;
+    border-radius: 15px; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+img{
+    width: 25%;
+    border: #b5293b 5px solid;
+    border-radius:50%;
+    box-shadow: 0px 0px 20px rgb(221, 220, 220);
+    float: left;
+    margin:0 10px;
+
+    padding: 15px;
+    animation: moveit 1.5s ease-in;
+}
+#description{
+    clear: both;
+    padding: 10px 0  ;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.titre{
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    color: #b5293b;
+    background-color: rgb(247, 244, 244);
+}
+h2{
+    color: black;
+}
+#cv{
+    display: flex;
+    gap: 50px;
+}
+.left{
+    display: inline-block;
+   vertical-align: top;   
+   background-color: rgb(247, 244, 244);
+   border-left: 50px solid #b5293b;
+   padding: 15px;
+   box-sizing: border-box;
+   width: 40%;
+}
+.right{
+    display: inline-block;
+    width: 55%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+h3 {
+    color: white;
+    border: 3px solid #b5293b;
+    border-radius: 30px ;  
+    background-color: #b5293b;
+    text-align: center; 
+}
+ul li{
+    padding: 10px;
+}
+i{
+    font-size: 1.2em;
+    color: #b5293b;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+} 
+.hover:hover{
+    
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #b5293b;
+    transform: scale(1);
+     transition: "transform 0.5s 0.5s";
+    
+}
+
+
+
+/* -----------Animation ----------- */
+.info,.langue,.interet,
+.competence,.formation,.experience{
+    padding: 15px;
+    box-shadow: 0px 0px 20px rgb(221, 220, 220); 
+    box-sizing: border-box;
+}
+
+@keyframes moveit {
+    from {
+      top: 100px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+/* ------responsive------- */
+@media screen and (max-width: 900px)
+{
+    main {
+        max-width: 100%;
+        margin: auto;
+    }
+    #description{
+        width: 100%;   
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    #cv{
+        flex-wrap: wrap;
+    }
+    h3{
+        font-size: 0.8em;
+    }
+    i{
+        font-size: 1em;
+    }
+    
+    .titre{
+        font-size: 0.8em;
+        text-align: center;
+        margin: auto;
+    }
+    img{
+        width: 27%;
+    }
+    
+}
