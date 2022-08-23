@@ -28,17 +28,19 @@ img{
 }
 .tete{
     display: flex;
-    margin: 10px;
+    margin: 25px;
 }
 
 .titre{
-    margin: 10px;
     text-align: center;
-    padding: 20px;
+    /* padding: 20px; */
     color: #b5293b;
-    background-color: rgb(247, 244, 244);
-    width: 55%;
+    width: 65%;
+    margin-left: 40px;
     
+}
+h1{
+    font-size: 2em;
 }
 h2{
     color: black;
@@ -68,7 +70,8 @@ a{
 h3 {
     color: white;
     border: 3px solid #b5293b;
-    border-radius: 30px ;  
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px; 
     background-color: #b5293b;
     text-align: center; 
 }
