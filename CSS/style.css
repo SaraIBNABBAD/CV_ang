@@ -20,7 +20,7 @@ img{
     border: #b5293b 5px solid;
     border-radius:50%;
     box-shadow: 0px 0px 20px rgb(221, 220, 220);
-    animation: moveit 1.5s ease-in;
+    animation: moveit 1s ease-in;
 }
 .tete{
     display: flex;
@@ -109,7 +109,7 @@ a:hover{
 @keyframes moveit {
     from {
       top: 100px;
-      opacity: 0;
+      opacity: 0.1;
     }
     to {
       top: 0;
